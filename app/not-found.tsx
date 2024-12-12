@@ -2,7 +2,7 @@ import React from 'react'
 
 const nofound = () => {
   return (
-    <div>tape</div>
+    <div>IMAGINE IF NINJA GOT A LOW TAPER FADE</div>
 
   )
 }
