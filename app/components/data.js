@@ -1,25 +1,32 @@
-{
-    "tickets"; [
-      {
-        "id": "1",
-        "title": "Fix the footer links please",
-        "body": "Lorem ipsum Triforce sit amet, Linkus Hyruleus tempus Ganondorf. Nunc ocarina sagittis quis Majoras Mask. Nulla in metus arcu. Supero nisi malesuada.",
-        "priority": "low",
-        "user_email": "mario@netninja.dev"
-      },
-      {
-        "id": "2",
-        "title": "Add in a new stylesheet",
-        "body": "Lorem ipsum Triforce sit amet, Linkus Hyruleus tempus Ganondorf. Nunc ocarina sagittis quis Majoras Mask. Nulla in metus arcu. Supero nisi malesuada.",
-        "priority": "medium",
-        "user_email": "mario@netninja.dev"
-      },
-      {
-        "id": "3",
-        "title": "Add3 in 3a new3 stylesheet",
-        "body": "Lorem ipsum Triforce sit amet, Linkus Hyruleus tempus Ganondorf. Nunc ocarina sagittis quis Majoras Mask. Nulla in metus arcu. Supero nisi malesuada.",
-        "priority": "medium",
-        "user_email": "mario3@netninja.dev"
-      },
-    ]
-  }
+export const stories = [
+  {
+    profileImg: "./assets/profile-1.png",
+    profileName: "Behance",
+    title: [
+      "Showcasing creative",
+      "portfolios and projects",
+      "from top designers",
+    ],
+    linkLabel: "Read More",
+    linkSrc: "behance.net",
+    storyImg: "/images/Architect.jpeg",
+  },
+  {
+    profileImg: "./assets/profile-2.png",
+    profileName: "Dribbble",
+    title: ["Inspiring design", "ideas and visual", "creations from experts"],
+    linkLabel: "Discover",
+    linkSrc: "dribbble.com",
+    storyImg: "./images/Architect.jpeg",
+  },
+
+  {
+    profileImg: "./assets/profile-2.png",
+    profileName: "Dribbble",
+    title: ["Inspiring design", "ideas and visual", "creations from experts"],
+    linkLabel: "Discover",
+    linkSrc: "dribbble.com",
+    storyImg: "/images/Contemporary Cliffside Architecture at Dusk.jpeg",
+  },
+  
+];

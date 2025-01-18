@@ -7,30 +7,36 @@ import ArrowReft from "./arrowright";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/src/ScrollTrigger";
 import { useState } from "react";
-
+import styles from './page.module.css'
+import { useEffect } from "react";
+import Line from "./line";
 gsap.registerPlugin(ScrollTrigger);
 
 const MainPage = () => {
+
+
+
+
   const arrowRight = useRef<HTMLButtonElement | null>(null);
   const sliderContent = [
-    {
-      name: "Serene Space",
-      subtext: "slave",
-      text: " We are building beatiful gardens and green forests for diddy ancompany",
-      img: "/images/Contemporary Cliffside Architecture at Dusk.jpeg",
-    },
+   
     {
       name: "Adventure ",
       subtext: "Serene Space",
       text: "Modern architecture open spaces, and functionality. Materials steel creatin simple and elegant.",
-      img: "/images/Tranquil Minimalist Atrium.jpeg",
+      img: "/images/Cozy Minimalist Interior.jpeg",
     },
    
     {
-      name: "City of Scienc",
+      name: "Wooden",
       subtext: "Serene Space",
       text: "Gothic architecture is characterized by pointed arches, intricate carvings, and towering spires. ",
-      img: "/images/Architect.jpeg",
+      img: "/images/Modern Woodland Retreat Interior.jpeg",
+    }, {
+      name: "Serene Space",
+      subtext: "slave",
+      text: " We are building beatiful gardens and green forests for diddy ancompany",
+      img: "/images/Contemporary Cliffside Architecture at Dusk.jpeg",
     },
   ];
 
@@ -68,14 +74,14 @@ const MainPage = () => {
 
   return (
     <>
-      <div className="h-[100vh] mainpage  overflow-x-auto ">
+      <div className="h-[100vh] mainpage  overflow-x-hidden ">
         <div className="h-[45vh] absolute bottom-0 w-full">
           <div className="mx-[1vw]">
             <span className="title texts leading-none">
               {sliderContent[currentnumber]?.name || "No Content Available"}
             </span>
 
-            <div className="w-full my-[1vw] bg-white h-[0.1vh]"></div>
+    <Line></Line>
 
             <div className="flex w-full justify-between">
               <div className="sub-text   leading-[1.2vw] flex-col">

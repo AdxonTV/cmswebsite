@@ -6,9 +6,16 @@ import Workssection from "./components/workssection";
 import MainPage from "./components/MainPage";
 import Textsection from "./components/textsection";
 import { useState, useEffect, useRef } from "react";
-
+import InstagramStories from "./components/reels";
+import Menu from "./components/Menu";
+import Line from "./components/line";
+import { stories } from "./components/data";
 import Textsecionnext from "./components/textsecionnext";
+import Footer from "./components/footer";
 gsap.registerPlugin(ScrollTrigger);
+
+
+
 
 const HomePage: React.FC = () => {
 
@@ -100,28 +107,42 @@ const HomePage: React.FC = () => {
 
 
   return (
-    <div ref={scrollRef}>
+    <div ref={scrollRef} className="  overflow-hidden">
       
 
 
       
 
-
+{/* <Menu></Menu> */}
           <MainPage></MainPage>
-          <div className="thepager w-[22vw] h-[50vh] z-[10000]  mt-[8.5vh] absolute"></div>
-         <div className="aboutpage ">
-          
-         <Textsecionnext></Textsecionnext>    </div>
+          <div className="thepager  w-[22vw] h-[35vh] z-[10000]  mt-[8.5vh] absolute"></div>
+         <div className="aboutpage  overflow-x-hidden">
+         
+          div
+         <Textsecionnext></Textsecionnext>    <div className="w-full bg-[#F1EDE7] mt-[-20vh]"> <Line></Line> </div> <Menu></Menu>   </div>
          <div className="">
-         <Workssection></Workssection>
-        <Textsection></Textsection>
-      
-
-        </div>
- 
+         <Footer></Footer>
+        
+       
+   
+    </div>
+    
+    {/* <InstagramStories stories={stories}></InstagramStories> */}
       
     </div>
   );
 };
 
 export default HomePage;
+// 'use client'
+// import styles from './page.module.css'
+// import { useRef, useEffect } from 'react';
+
+// export default function Home() {
+
+
+
+//   return (
+//   <div></div>
+//   )
+// }
